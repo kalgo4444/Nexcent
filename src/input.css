@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Inter;
+    src: url(../src/assets/fonts/Inter_18pt-Regular.ttf);
+}
+@import "tailwindcss";
+
+@theme{
+    --font-Inter: Inter;
+    --color-main: #4CAF4F;
+    --color-second: #F5F7FA;
+    --color-title: #4D4D4D;
+    --color-text: #717171;
+    --color-footerbg: #263238;
+    --color-footertext: #F5F7FA;
+}
+.container{
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+}h1,h2,h3,h4,p,a,span,input,button,textarea,select{
+    font-family: Inter;
+}
