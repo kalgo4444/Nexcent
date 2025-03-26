@@ -236,6 +236,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .h-\[84px\] {
     height: 84px;
   }
@@ -262,6 +265,9 @@
   }
   .w-\[628px\] {
     width: 628px;
+  }
+  .shrink {
+    flex-shrink: 1;
   }
   .grow {
     flex-grow: 1;
@@ -391,9 +397,6 @@
   }
   .py-\[32px\] {
     padding-block: 32px;
-  }
-  .py-\[48px\] {
-    padding-block: 48px;
   }
   .py-\[66px\] {
     padding-block: 66px;
@@ -544,6 +547,39 @@
 }
 h1,h2,h3,h4,p,a,span,input,button,textarea,select {
   font-family: Inter;
+}
+.top {
+  width: 40px;
+  height: 40px;
+  background: green;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .3s;
+  box-shadow: #000 0px 0px 10px;
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+.top.hidden {
+  bottom: -60px;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: .3s ease;
+}
+header.shrink {
+  box-shadow: 0 5px 5px #0001;
+}
+header.shrink .navbar {
+  height: 90px;
 }
 @property --tw-rotate-x {
   syntax: "*";
