@@ -6,49 +6,302 @@
     <title>Nextcent</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="icon" href="./src/assets/images/Icon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <header class="bg-second">
+    <header class="bg-second sticky top-0 left-0 z-50">
       <nav class="container flex h-[84px] items-center justify-between">
         <div>
           <img src="./src/assets/images/Logo.svg" alt="" />
         </div>
-        <ul class="flex items-center">
+        <ul class="flex items-center gap-[50px] cursor-pointer">
           <li>
-            <a href="#">
+            <a href="#" class="hover:text-main">
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#service">
+            <a href="#service" class="hover:text-main">
               <span>Service</span>
             </a>
           </li>
           <li>
-            <a href="#feature">
+            <a href="#feature" class="hover:text-main">
               <span>Feature</span>
             </a>
           </li>
           <li>
-            <a href="#product">
+            <a href="#product" class="hover:text-main">
               <span>Product</span>
             </a>
           </li>
           <li>
-            <a href="#testimonial">
+            <a href="#testimonial" class="hover:text-main">
               <span>Testimonial</span>
             </a>
           </li>
           <li>
-            <a href="#faq">
+            <a href="#faq" class="hover:text-main">
               <span>FAQ</span>
             </a>
           </li>
         </ul>
-        <div>
-            <button>Log In</button>
+        <div class="flex items-center gap-3.5">
+          <button
+            class="font-medium text-main py-2.5 px-5 rounded-md cursor-pointer hover:bg-main hover:text-white duration-300"
+          >
+            Log In
+          </button>
+          <button
+            class="font-medium text-white py-2.5 px-5 rounded-md cursor-pointer bg-main hover:bg-second hover:text-main border-main hover:outline-1 duration-300"
+          >
+            Sign Up
+          </button>
         </div>
       </nav>
     </header>
+    <main>
+      <!-- hero  -->
+      <section class="bg-second py-[94px]">
+        <div class="container flex gap-[104px] items-center">
+          <div class="w-[60%]">
+            <h1 class="text-[64px] font-semibold text-title">
+              Lessons and insights <span class="text-main">from 8 years</span>
+            </h1>
+            <p class="text-text">
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+            <button
+              class="bg-main py-3.5 px-8 font-medium mt-8 rounded-[4px] text-white hover:text-main hover:outline-1 hover:bg-second duration-300"
+            >
+              Register
+            </button>
+          </div>
+          <div data-aos="zoom-in"
+          data-aos-duration="150">
+            <img src="./src/assets/images/heroImg.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- clients  -->
+      <section id="service">
+        <div class="container">
+          <h2 class="text-title text-center font-semibold text-4xl mt-10">
+            Our Clients
+          </h2>
+          <p class="text-text text-center mt-2">
+            We have been working with some Fortune 500+ clients
+          </p>
+          <div class="flex justify-between mt-4 py-6" data-aos="zoom-in"
+          data-aos-duration="150">
+            <img src="./src/assets/images/clients1.svg" alt="" />
+            <img src="./src/assets/images/clients2.svg" alt="" />
+            <img src="./src/assets/images/clients3.svg" alt="" />
+            <img src="./src/assets/images/clients4.svg" alt="" />
+            <img src="./src/assets/images/clients5.svg" alt="" />
+            <img src="./src/assets/images/clients6.svg" alt="" />
+            <img src="./src/assets/images/clients7.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- manage  -->
+      <section id="feature">
+        <div class="container mt-10">
+          <h2
+            class="text-title text-center font-semibold text-4xl mt-10 w-[542px] m-auto"
+          >
+            Manage your entire community in a single system
+          </h2>
+          <p class="text-text text-center mt-2">
+            Who is Nextcent suitable for?
+          </p>
+          <div class="grid grid-cols-3 gap-[127px] mt-4 text-center">
+            <div class="p-6 shadow-md" data-aos="zoom-in"
+            data-aos-duration="150">
+              <img
+                src="./src/assets/images/magage1.svg"
+                class="m-auto"
+                alt=""
+              />
+              <h1 class="font-bold text-[28px]">Membership Organisations</h1>
+              <p class="text-text text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div class="p-6 shadow-md" data-aos="zoom-in"
+            data-aos-duration="150">
+              <img
+                src="./src/assets/images/magage2.svg"
+                class="m-auto"
+                alt=""
+              />
+              <h1 class="font-bold text-[28px]">National Associations</h1>
+              <p class="text-text text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div class="p-6 shadow-md" data-aos="zoom-in"
+            data-aos-duration="150">
+              <img
+                src="./src/assets/images/magage3.svg"
+                class="m-auto"
+                alt=""
+              />
+              <h1 class="font-bold text-[28px]">
+                Clubs And <br />
+                Groups
+              </h1>
+              <p class="text-text text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- unseen  -->
+      <section id="">
+        <div class="container mt-10 flex items-center" data-aos="fade-up"
+        data-aos-duration="150">
+          <div>
+            <img src="./src/assets/images/unseen.svg" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <h2 class="text-title font-semibold text-4xl w-[601px]">
+              The unseen of spending three years at Pixelgrade
+            </h2>
+            <p class="text-sm text-text mt-4 w-[601px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+            <button
+              class="bg-main py-3.5 px-8 font-medium mt-8 rounded-[4px] text-white hover:text-main hover:outline-1 hover:bg-white duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- helping  -->
+      <section id="" class="bg-second">
+        <div class="container mt-12 flex items-center gap-[204px] py-16">
+          <div class="w-50%">
+            <h2 class="text-title font-semibold text-4xl w-[400px]">
+              Helping a local
+              <span class="text-main">business reinvent itself</span>
+            </h2>
+            <p class="text-text">
+              We reached here with our hard work and dedication
+            </p>
+          </div>
+          <div class="w-[50%] grid grid-cols-2 gap-[30px]">
+            <!-- box 1 -->
+             <div class="flex items-center gap-4">
+              <img src="./src/assets/images/helping1.svg" alt="">
+              <div>
+                <h3 class="font-bold text-[28px] text-title">2,245,341</h3>
+                <p class="text-text">Members</p>
+              </div>
+             </div>
+            <!-- box 2 -->
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/images/helping2.svg" alt="">
+              <div>
+                <h3 class="font-bold text-[28px] text-title">46,328</h3>
+                <p class="text-text">Clubs</p>
+              </div>
+             </div>
+            <!-- box 3 -->
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/images/helping3.svg" alt="">
+              <div>
+                <h3 class="font-bold text-[28px] text-title">828,867</h3>
+                <p class="text-text">Event Bookings</p>
+              </div>
+             </div>
+            <!-- box 4 -->
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/images/helping4.svg" alt="">
+              <div>
+                <h3 class="font-bold text-[28px] text-title">1,926,436</h3>
+                <p class="text-text">Payments</p>
+              </div>
+             </div>
+          </div>
+        </div>
+      </section>
+      <!-- design  -->
+      <section id="product" class="py-12">
+        <div class="container flex items-center" data-aos="fade-up"
+        data-aos-duration="150">
+          <div>
+            <img src="./src/assets/images/design.svg" alt="" />
+          </div>
+          <div class="w-[60%]">
+            <h2 class="text-title font-semibold text-4xl w-[601px]">
+              How to design your site footer like we did
+            </h2>
+            <p class="text-sm text-text mt-4 w-[601px]">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
+            </p>
+            <button
+              class="bg-main py-3.5 px-8 font-medium mt-8 rounded-[4px] text-white hover:text-main hover:outline-1 hover:bg-white duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- brand  -->
+      <section class="bg-second py-[32px]">
+        <div class="container flex items-center gap-[78px]">
+          <div class="w-[30%]">
+            <img src="./src/assets/images/brand.svg" alt="">
+          </div>
+          <div class="w-[70%]">
+            <p class="font-medium text-text">
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+            </p>
+            <h4 class="mt-4 text-main font-semibold text-[20px]">Tim Smith</h4>
+            <p class="text-text">British Dragon Boat Racing Association</p>
+            <div class="mt-6 flex items-center gap-8">
+            <div class="flex gap-12 items-center">
+              <img src="./src/assets/images/brand1.svg" alt="">
+              <img src="./src/assets/images/brand2.svg" alt="">
+              <img src="./src/assets/images/brand3.svg" alt="">
+              <img src="./src/assets/images/brand4.svg" alt="">
+              <img src="./src/assets/images/brand5.svg" alt="">
+              <img src="./src/assets/images/brand6.svg" alt="">
+            </div>
+            <div class="flex items-center gap-[13px] cursor-pointer">
+              <a href="#" class="text-main font-semibold text-[18px]">Meet all customers</a>
+              <img src="./src/assets/images/Right.svg" alt="">
+            </div>
+          </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <!-- caring  -->
+      <section class="py-[48px]">
+        <div class="container">
+          
+        </div>
+      </section>
+    </main>
+
+
+    <!-- js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
